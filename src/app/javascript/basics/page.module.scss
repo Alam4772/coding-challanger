@@ -15,10 +15,16 @@
     margin-top: 50px;
     flex: 1;
     overflow: auto;
-    display: flex;
-    justify-content: center;
-    .stepper {
-      width: 50%;
+
+    .customScrollbar {
+      height: 100%;
+      .block {
+        display: flex;
+        justify-content: center;
+        .stepper {
+          width: 50%;
+        }
+      }
     }
   }
 }

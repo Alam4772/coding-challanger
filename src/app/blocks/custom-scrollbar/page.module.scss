@@ -1,0 +1,25 @@
+.scrollbar {
+//   height: 100%;
+  overflow-y: auto;
+  scrollbar-width: thin !important; /* Firefox */
+  scrollbar-color: var(--thumb-color) var(--track-color); /* Firefox */
+  scroll-behavior: smooth; /* Smooth scrolling behavior */
+
+  /* WebKit */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--track-color);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--thumb-color);
+    border-radius: 20px;
+  }
+}
+
+.content {
+  padding-right: 16px; /* Adjust according to scrollbar width */
+}
