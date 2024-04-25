@@ -1,0 +1,36 @@
+.step {
+  &:hover {
+    cursor: pointer;
+  }
+  .block {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    .round {
+      height: 100px;
+      width: 100px;
+      border: 2px solid white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .para {
+      flex: 1;
+      .desc {
+        color: #ffffffbf;
+        font-size: 13px;
+      }
+    }
+  }
+  .line {
+    min-height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    span {
+      height: inherit;
+      border-left: 2px solid white;
+    }
+  }
+}

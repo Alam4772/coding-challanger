@@ -1,0 +1,24 @@
+.page {
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+
+  .header {
+    .divider {
+      margin-top: 25px;
+      border-bottom: 1px solid #ffffffad;
+    }
+  }
+
+  .content {
+    margin-top: 50px;
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    .stepper {
+      width: 50%;
+    }
+  }
+}
